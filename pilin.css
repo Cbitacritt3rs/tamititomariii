@@ -1,0 +1,184 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(6, 3, 24);
+    justify-content: center;
+  }
+  
+  .contenedor {
+    width: 512px; 
+    height: 768px;
+    max-height: 768px;
+    overflow: hidden;
+    position: absolute;
+  }
+  
+  .part1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  
+  .fondonegro {
+    background-image: url('imgs/fondonegro.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+  
+  .cabro1, .cabro2 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+  .cabro1 {
+    background-image: url('imgs/cabronormal.png');
+    display: flex;
+  }
+  .cabro2 {
+    background-image: url('imgs/cabrogolpe.png');
+    display: none;
+  }
+  .kgada {
+    width: 5px;
+    height: 5px;
+    left: 50%;
+    top: 50%;
+    display: none;
+    position: absolute;
+    border-radius: 100%;
+    background-color: rgb(255, 205, 160);
+  }
+  
+  .coraz {
+    background-image: url('imgs/coraz.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+  
+  .botonap {
+    height: 400px;
+    width: 250px;
+    left: 75px;
+    top: 150px;
+    position: absolute;
+  }
+  
+  .fondorosa, .fondito {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: none;
+  }
+  .fondorosa {
+    background-image: url('imgs/fondorosa.png');
+  }
+  
+  .fondito {
+    background-image: url('imgs/fondito.png');
+  }
+
+  @keyframes bola {
+    0% {
+        transform: scale(1);
+        background-color: rgb(255, 205, 160);
+    }
+    20% {
+        background-color: rgb(237, 255, 255);
+    }
+    40% {
+        transform: scale(210);
+        opacity: 100%;
+    }
+    100%{
+        transform: scale(210);
+        background-color: rgb(253, 153, 240);
+        opacity: 0%;
+    }
+  }
+  @keyframes explo {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+  }
+  @keyframes nubesap {
+    0% {
+        display: flex;
+        opacity: 0%;
+    }
+    100% {
+        display: flex;
+        opacity: 100%;
+    }
+  }
+  .explotarcoso {
+    display: flex;
+    animation: explo 0.5s;
+  }
+  .aparecer {
+    display: flex !important;
+  }
+  .desaparecer{
+    display: none;
+  }
+  .kgadaexpan {
+    display: flex;
+    animation: bola 5s ;
+  }
+  .aparnubes {
+    display: flex !important;
+    animation: nubesap 3s;
+  }
+  .nubes1, .nubes2, .nubes3, .cabropensando, .botoncabro, .botoncabro2, .texto1, .texto2 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    display: none;
+  }
+  .nubes1 {
+    background-image: url(imgs/nubes1.png);}
+  .nubes2 {
+    background-image: url(imgs/nubes2.png);}
+  .nubes3 {
+    background-image: url(imgs/nubes3.png);}
+  .cabropensando {
+    background-image: url(imgs/cabropensando.png);}
+  .botoncabro {
+    background-image: url(imgs/botoncabro.png);} 
+  .botoncabro2 {
+    background-image: url(imgs/botoncabro2.png);}   
+  .texto1 {
+    background-image: url(imgs/texto1.png);}
+  .texto2 {
+    background-image: url(imgs/texto2.png);}
+
+  .botonaudio {
+    width: 140px;
+    height: 140px;
+    left: 30%;
+    top: 56%;
+    position: absolute;
+    display: none;
+  }
